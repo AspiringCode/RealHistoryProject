@@ -49,16 +49,15 @@ export default function CauseEffectFlow() {
       <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
         Cause and Effect: The Chain of Decisions
       </h3>
-      
+
       <div className="space-y-4">
         {flowNodes.map((node, index) => (
           <div key={node.id}>
             <motion.div
-              className={`rounded-lg p-5 cursor-pointer transition-all ${
-                selectedNode === node.id
+              className={`rounded-lg p-5 cursor-pointer transition-all ${selectedNode === node.id
                   ? 'bg-orange-50 border-2 border-orange-500'
                   : 'bg-slate-50 border-2 border-slate-200 hover:border-slate-300'
-              }`}
+                }`}
               onClick={() => setSelectedNode(selectedNode === node.id ? null : node.id)}
               whileHover={{ scale: 1.02 }}
             >
@@ -71,7 +70,7 @@ export default function CauseEffectFlow() {
                     <h4 className="font-bold text-slate-900">{node.title}</h4>
                   </div>
                   <p className="text-sm text-slate-700 ml-10">{node.description}</p>
-                  
+
                   {selectedNode === node.id && (
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
@@ -88,9 +87,8 @@ export default function CauseEffectFlow() {
                     </motion.div>
                   )}
                 </div>
-                <Info className={`w-5 h-5 flex-shrink-0 ${
-                  selectedNode === node.id ? 'text-orange-600' : 'text-slate-400'
-                }`} />
+                <Info className={`w-5 h-5 flex-shrink-0 ${selectedNode === node.id ? 'text-orange-600' : 'text-slate-400'
+                  }`} />
               </div>
             </motion.div>
 
@@ -105,8 +103,8 @@ export default function CauseEffectFlow() {
 
       <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border-l-4 border-blue-500">
         <p className="text-sm text-slate-700">
-          <strong className="text-blue-900">Click each step</strong> to see how it created the conditions 
-          for the next decision. This chain demonstrates Historical Thinking Skill 5.B: explaining how 
+          <strong className="text-blue-900">Click each step</strong> to see how it created the conditions
+          for the next decision. This chain demonstrates Historical Thinking Skill 5.B: explaining how
           developments relate to one another.
         </p>
       </div>

@@ -3,11 +3,13 @@ import PageLayout from '../Components/shared/PageLayout';
 import CalloutBox from '../Components/shared/CalloutBox';
 import HiddenDigit from '../Components/shared/HiddenDigit';
 import Hint from '../Components/shared/Hint';
+import { useDifficulty } from '../context/DifficultyContext';
 import { ArrowDown, Zap, Shield, AlertTriangle, Flame, Scale, ArrowRight, Activity } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ChainOfEvents() {
     const [activeEventIndex, setActiveEventIndex] = useState(0);
+    const { difficulty } = useDifficulty();
 
     const events = [
         {
@@ -193,15 +195,51 @@ export default function ChainOfEvents() {
             title="Chain of Events"
             subtitle="Tracing the path from cooperation to conflict: a timeline of key decisions and turning points."
         >
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start relative">
-                <HiddenDigit digit="2" position="left" />
+            {/* Hidden Digit Box - Easy Mode Only (top, prominent) */}
+            {difficulty === 'easy' && (
+                <div className="mb-12">
+                    <div className="glass-card-dark-strong rounded-2xl border border-gold-bright/30 shadow-2xl relative overflow-hidden transition-all duration-300 p-6 max-w-2xl mx-auto">
+                        <div className="absolute inset-0 bg-gradient-to-br from-gold-bright/10 via-transparent to-gold-muted/10" />
+                        <div className="relative z-10 flex items-center justify-between gap-6">
+                            <div className="flex-1">
+                                <h3 className="text-lg font-bold text-gold-bright mb-2 font-serif">Scavenger Hunt</h3>
+                                <p className="text-slate-300 leading-relaxed text-sm">
+                                    You found another clue! Click the glowing orb to reveal the hidden digit.
+                                </p>
+                            </div>
+                            <div className="flex-shrink-0">
+                                <HiddenDigit digit="2" position="inline" className="scale-125" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
 
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start relative">
                 {/* Left Column: Timeline */}
                 <div className="relative">
                     {/* Vertical Line */}
                     <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500/20 via-gold-bright/20 to-red-500/20 rounded-full" />
 
                     <div className="space-y-12">
+                        {/* Hidden Digit Box - Medium Mode Only (in the middle of timeline) */}
+                        {difficulty === 'medium' && events.length > 0 && (
+                            <div className="flex justify-end mb-12">
+                                <div className="glass-card-dark-strong rounded-2xl border border-gold-bright/30 shadow-2xl relative overflow-hidden transition-all duration-300 p-4 max-w-md">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-gold-bright/10 via-transparent to-gold-muted/10" />
+                                    <div className="relative z-10 flex items-center justify-end gap-4">
+                                        <div className="flex-1">
+                                            <p className="text-slate-300 text-xs italic">
+                                                A digit is hidden on the left side of this page
+                                            </p>
+                                        </div>
+                                        <div className="flex-shrink-0">
+                                            <HiddenDigit digit="2" position="inline" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                         {events.map((event, index) => (
                             <div
                                 key={index}
@@ -308,12 +346,26 @@ export default function ChainOfEvents() {
 
                     <CalloutBox type="insight" title="Historical Thinking skill 5.B in action" className="mt-6">
                         <p>
-                            This is a significantly shorter summary cause & effect chain that outlines the response to the Research plan. As you can see, there is a clear explanation (or a logical conclusion to be made) between each cause and effect. <Hint easyHint="Tip: Check the left edge of this page" mediumHint="A digit is hidden on the left side of this page" hardHint="Check the left" showInEasy={true} showInMedium={true} showInHard={true} />
+                            This is a significantly shorter summary cause & effect chain that outlines the response to the Research plan. As you can see, there is a clear explanation (or a logical conclusion to be made) between each cause and effect.
                         </p>
                     </CalloutBox>
                 </div>
 
             </div>
+
+            {/* Hidden Digit Box - Hard Mode Only (at the very bottom, tucked away) */}
+            {difficulty === 'hard' && (
+                <div className="mt-16 flex justify-end">
+                    <div className="glass-card-dark-strong rounded-2xl border border-gold-bright/30 shadow-2xl relative overflow-hidden transition-all duration-300 p-3 max-w-xs">
+                        <div className="absolute inset-0 bg-gradient-to-br from-gold-bright/10 via-transparent to-gold-muted/10" />
+                        <div className="relative z-10 flex items-center justify-end">
+                            <div className="flex-shrink-0">
+                                <HiddenDigit digit="2" position="inline" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </PageLayout>
     );
 }
