@@ -6,6 +6,7 @@ import ShadowWar from './Pages/ShadowWar.jsx';
 import Sources from './Pages/Sources.jsx';
 import ChainOfEvents from './Pages/ChainOfEvents.jsx';
 import Operation from './Pages/Operation.jsx';
+import SecretFortune from './Pages/SecretFortune.jsx';
 
 import Navbar from './Components/shared/Navbar.jsx';
 import { DifficultyProvider } from './context/DifficultyContext.jsx';
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/chainofevents" element={<ChainOfEvents />} />
           <Route path="/sources" element={<Sources />} />
           <Route path="/operation" element={<Operation />} />
+          <Route path="/secret" element={<SecretFortune />} />
         </Routes>
       </div>
     </DifficultyProvider>

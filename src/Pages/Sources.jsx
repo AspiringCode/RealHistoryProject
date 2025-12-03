@@ -5,144 +5,128 @@ import { BookOpen, Link as LinkIcon } from 'lucide-react';
 export default function Sources() {
     const sources = [
         {
-            citation: 'Al Jazeera English. "Iran says \'we will not remain silent\' over Israel\'s attack." YouTube, 27 Oct. 2024, www.youtube.com/watch?v=...',
-            url: '#'
+            citation: 'Al Jazeera English. "Yemen’s Houthis Say They Are Now at War with the US after Iran Strikes." Al Jazeera English, 2025.',
+            url: 'https://www.aljazeera.com/'
         },
         {
-            citation: 'Albright, David, et al. "Fordow: A History." Institute for Science and International Security, 2009.',
-            url: '#'
+            citation: 'Albright, David, and Sarah Burkhard. "Iran’s Nuclear Timetable: The Weapon Potential." Institute for Science and International Security, 11 June 2025.',
+            url: 'https://www.iranwatch.org/our-publications/articles-reports/irans-nuclear-timetable-weapon-potential'
         },
         {
-            citation: 'Al-Khatteeb, Luay. "Iran\'s Nuclear Program: The Day After." Brookings Institution, 2015.',
-            url: '#'
+            citation: 'Arms Control Association. "Arms Control and Proliferation Profile: Iran." Arms Control Association, Mar. 2025.',
+            url: 'https://www.armscontrol.org/factsheets/iranprofile'
         },
         {
-            citation: 'Arms Control Association. "The Joint Comprehensive Plan of Action (JCPOA) at a Glance." Arms Control Association, 2023, www.armscontrol.org/factsheets/JCPOA-at-a-glance.',
+            citation: 'Arms Control Association. "The Joint Comprehensive Plan of Action (JCPOA) at a Glance)." Arms Control Association, Feb. 2025.',
             url: 'https://www.armscontrol.org/factsheets/JCPOA-at-a-glance'
         },
         {
-            citation: 'Atlantic Council. "The Strait of Hormuz: A Global Chokepoint." Atlantic Council, 2019.',
-            url: '#'
+            citation: 'Atlantic Council Experts. "Experts React: Israel Just Attacked Iran’s Military and Nuclear Sites. What’s Next?" Atlantic Council, 12 June 2025.',
+            url: 'https://www.atlanticcouncil.org/blogs/new-atlanticist/experts-react-israel-just-attacked-irans-military-and-nuclear-sites-whats-next/'
         },
         {
-            citation: 'Baker, Peter. "Trump Orders Strike on Iran, Bypassing Congress." The New York Times, 21 June 2019.',
-            url: '#'
+            citation: 'Congressional Research Service. "Iran Conflict and the Strait of Hormuz: Oil and Gas Market Impacts." CRS Report R45281, 4 Aug. 2025.',
+            url: 'https://crsreports.congress.gov/product/pdf/R/R45281'
         },
         {
-            citation: 'Bar-Joseph, Uri. "The Begin Doctrine: The Lessons of Osirak and Al-Kibar." Israel Affairs, vol. 19, no. 3, 2013.',
-            url: '#'
+            citation: 'Cooper, Helene, and Eric Schmitt. "U.S. B-2s and Cruise Missiles Pound Iran’s Nuclear Sites in Overnight Strikes." The New York Times, 22 June 2025.',
+            url: 'https://www.nytimes.com/'
         },
         {
-            citation: 'Broad, William J., and David E. Sanger. "A Secret Iranian Nuclear Site, Built to Withstand Attack." The New York Times, 25 Sept. 2009.',
-            url: '#'
+            citation: 'Davenport, Kelsey. "The Joint Comprehensive Plan of Action (JCPOA) at a Glance." Arms Control Association, Feb. 2025.',
+            url: 'https://www.armscontrol.org/factsheets/JCPOA-at-a-glance'
         },
         {
-            citation: 'Cooper, Helene, and Eric Schmitt. "U.S. Strikes on Iran: A Risk Calculated." The New York Times, 2025.',
-            url: '#'
+            citation: 'Energy Information Administration. "The Strait of Hormuz Is the World’s Most Important Oil Transit Chokepoint." Today in Energy, 20 June 2019.',
+            url: 'https://www.eia.gov/todayinenergy/detail.php?id=39932'
         },
         {
-            citation: 'Davenport, Kelsey. "Timeline of Nuclear Diplomacy with Iran." Arms Control Association, 2024.',
-            url: '#'
+            citation: 'Heinonen, Olli. "Verifying Iran’s Nuclear Compliance." Belfer Center for Science and International Affairs, 10 June 2014.',
+            url: 'https://www.belfercenter.org/publication/olli-heinonens-testimony-verifying-irans-nuclear-compliance'
         },
         {
-            citation: 'Energy Information Administration (EIA). "The Strait of Hormuz is the world\'s most important oil transit chokepoint." U.S. Energy Information Administration, 2023.',
-            url: '#'
+            citation: 'Holland, Steve, and Jeff Mason. "Trump Reimposes ‘Maximum Pressure’ on Iran, Aims to Drive Oil Exports to Zero." Reuters, 5 Feb. 2025.',
+            url: 'https://www.reuters.com/world/us/trump-set-reimpose-maximum-pressure-iran-official-says-2025-02-04/'
         },
         {
-            citation: 'Fahim, Kareem, and Dan Lamothe. "Iran Launches Missiles at U.S. Forces in Iraq." The Washington Post, 8 Jan. 2020.',
-            url: '#'
+            citation: 'International Atomic Energy Agency. "Implementation of the NPT Safeguards Agreement in the Islamic Republic of Iran." IAEA, GOV/2003/75, 10 Nov. 2003.',
+            url: 'https://www.iaea.org/sites/default/files/gov2003-75.pdf'
         },
         {
-            citation: 'Heinonen, Olli. "Iran\'s Nuclear Program: The IAEA\'s Perspective." Belfer Center for Science and International Affairs, 2011.',
-            url: '#'
+            citation: 'International Atomic Energy Agency. "Verification and Monitoring in the Islamic Republic of Iran in Light of UNSCR 2231 (2015)." IAEA, 2025.',
+            url: 'https://www.iaea.org'
         },
         {
-            citation: 'Holland, Steve, and Jeff Mason. "Trump Withdraws U.S. from Iran Nuclear Deal." Reuters, 8 May 2018.',
-            url: '#'
+            citation: 'International Energy Agency. "Oil Market Report – June 2025." International Energy Agency, 17 June 2025.',
+            url: 'https://www.iea.org/reports/oil-market-report-june-2025'
         },
         {
-            citation: 'International Atomic Energy Agency (IAEA). "Verification and Monitoring in the Islamic Republic of Iran." IAEA Reports, 2016–2024.',
-            url: '#'
+            citation: 'Kim, Dong-young. "Closure of Hormuz Strait Likely to Imperil South Korea’s Energy Lifeline." Aju Press, 23 June 2025.',
+            url: 'https://www.ajupress.com/view/20250623095145670'
         },
         {
-            citation: 'International Energy Agency (IEA). "Oil Market Report: Crisis in the Gulf." IEA, 2025.',
-            url: '#'
+            citation: 'LaGrone, Sam. "U.S. Strikes 3 Iranian Nuclear Sites Using B-2s, Sub-Launched Tomahawks." USNI News, 22 June 2025.',
+            url: 'https://news.usni.org/2025/06/22/u-s-strikes-3-iranian-nuclear-sites-using-b-2s-sub-launched-tomahawks'
         },
         {
-            citation: 'Jones, Jeffrey M. "Public Opinion on U.S. Military Action Against Iran." Gallup, 2025.',
-            url: '#'
+            citation: 'Levitt, Matthew. "Hezbollah and the Axis of Resistance." The Washington Institute for Near East Policy, 2023.',
+            url: 'https://www.washingtoninstitute.org/policy-analysis/hezbollah-and-axis-resistance'
         },
         {
-            citation: 'Journalist\'s Resource. "U.S.-Israel Relations: A Guide for Journalists." Harvard Kennedy School, 2023.',
-            url: '#'
+            citation: 'Lidman, Melanie. "Israel’s Attack on Iran Was Years in the Making. How Did They Get Here?" AP News, 13 June 2025.',
+            url: 'https://apnews.com/article/israel-iran-nuclear-netanyahu-hezbollah-hamas-houthis-0e5ae5a36fe89f4df753f049be96322d'
         },
         {
-            citation: 'Keinon, Herb. "The Begin Doctrine: Israel\'s Strike on Osirak." The Jerusalem Post, 2021.',
-            url: '#'
+            citation: 'MacAskill, Ewen, and Chris McGreal. "Iranian President Sparks Angger with Call to Wipe Israel off the Map." The Guardian, 27 Oct. 2005.',
+            url: 'https://www.theguardian.com/world/2005/oct/27/israel.iran'
         },
         {
-            citation: 'Kerr, Paul K. "Iran\'s Nuclear Program: Status." Congressional Research Service, 2023.',
-            url: '#'
+            citation: 'Magid, Jacob. "Did the U.S. Just Reset Iran’s Nuclear Clock?" The Times of Israel, 24 June 2025.',
+            url: 'https://www.timesofisrael.com/pentagon-says-iran-nuclear-program-set-back-closer-to-2-years-after-us-strikes/'
         },
         {
-            citation: 'Levitt, Matthew. "Hezbollah: The Global Footprint of Lebanon\'s Party of God." Georgetown University Press, 2013.',
-            url: '#'
+            citation: 'Marsi, Fadi. "Israel Kills Nuclear Scientists, Strikes Sites in Iran: Who Did It Target?" Al Jazeera, 13 June 2025.',
+            url: 'https://www.aljazeera.com/news/2025/6/13/israel-kills-nuclear-scientists-strikes-sites-in-iran-who-did-it-target'
         },
         {
-            citation: 'Lidman, Melanie. "Israel\'s Shadow War with Iran." The Times of Israel, 2024.',
-            url: '#'
+            citation: 'Nuclear Threat Initiative. "Fordow Fuel Enrichment Plant." NTI, 2024.',
+            url: 'https://www.nti.org/learn/facilities/fordow-fuel-enrichment-plant/'
         },
         {
-            citation: 'MacAskill, Ewen, and Chris McGreal. "Israel should be wiped off map, says Iran\'s president." The Guardian, 27 Oct. 2005.',
-            url: '#'
+            citation: 'PFL Petroleum Services. "PFL Railcar Report 6-23-2025." PFL Petroleum Services, 23 June 2025.',
+            url: 'https://pflpetroleum.com/reports/pfl-railcar-report-6-23-2025/'
         },
         {
-            citation: 'Marsi, Federica. "Timeline: Israel\'s attacks on Iranian targets." Al Jazeera, 2024.',
-            url: '#'
+            citation: 'Rowberry, Ariana. "Sixty Years of ‘Atoms for Peace’ and Iran’s Nuclear Program." Brookings Institution, 18 Dec. 2013.',
+            url: 'https://www.brookings.edu/articles/sixty-years-of-atoms-for-peace-and-irans-nuclear-program/'
         },
         {
-            citation: 'Mulligan, Stephen P. "Withdrawal from International Agreements: Legal Framework." Congressional Research Service, 2018.',
-            url: '#'
+            citation: 'Sanger, David E., and Mark Mazzetti. "Israel Struck Syrian Nuclear Project, Analysts Say." The New York Times, 14 Oct. 2007.',
+            url: 'https://www.nytimes.com/2007/10/14/washington/14weapons.html'
         },
         {
-            citation: 'Netanyahu, Benjamin. "Speech to the U.S. Congress." 3 Mar. 2015.',
-            url: '#'
+            citation: 'U.S. Department of Defense. "GBU-57A/B Massive Ordnance Penetrator Fact Sheet." U.S. Air Force, 2025.',
+            url: 'https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104516/gbu-57a-b-massive-ordnance-penetrator/'
         },
         {
-            citation: 'Nuclear Threat Initiative (NTI). "Fordow Fuel Enrichment Plant." NTI, 2024.',
-            url: '#'
+            citation: 'United Nations Security Council. "Resolution 2231 (2015)." United Nations, 20 July 2015.',
+            url: 'https://undocs.org/S/RES/2231(2015)'
         },
         {
-            citation: 'Reuters. "Russia, China Condemn U.S. Strikes on Iran." Reuters, 2025.',
-            url: '#'
+            citation: 'United States Congress, Senate. "Debate on War Powers Resolution Concerning Military Action Against Iran." 2025.',
+            url: 'https://www.congress.gov'
         },
         {
-            citation: 'Rising, David. "Bunker Busters and Stealth: The Weapons That Could Hit Fordow." Associated Press, 2024.',
-            url: '#'
+            citation: 'United States Withdrawal from the JCPOA. Wikipedia, last edited 2 Oct. 2025.',
+            url: 'https://en.wikipedia.org/wiki/United_States_withdrawal_from_the_Joint_Comprehensive_Plan_of_Action'
         },
         {
-            citation: 'Rowberry, Ariana. "Sixty Years of Atoms for Peace." Brookings Institution, 2013.',
-            url: '#'
+            citation: 'Yadlin, Amos. "The Begin Doctrine: The Lessons of Osirak and Deir ez-Zor." INSS Insight, 21 Mar. 2018.',
+            url: 'https://www.inss.org.il/publication/the-begin-doctrine-the-lessons-of-osirak-and-deir-ez-zor/'
         },
         {
-            citation: 'Thrush, Glenn, and Alan Rappeport. "Trump Imposes New Sanctions on Iran." The New York Times, 2019.',
-            url: '#'
-        },
-        {
-            citation: 'United Nations Security Council. "Resolution 2231 (2015)." United Nations, 2015.',
-            url: '#'
-        },
-        {
-            citation: 'U.S. Department of Defense. "GBU-57 Massive Ordnance Penetrator (MOP) Factsheet." 2023.',
-            url: '#'
-        },
-        {
-            citation: 'White House. "President Donald J. Trump Is Ending United States Participation in an Unacceptable Iran Deal." White House Archives, 2018.',
-            url: '#'
-        },
-        {
-            citation: 'Zengerle, Patricia. "Senate Fails to Overturn Trump Veto of Iran War Powers Resolution." Reuters, 2020.',
-            url: '#'
+            citation: 'Zengerle, Patricia. "UN Security Council to Meet Sunday over U.S. Strikes on Iran." Reuters, 22 June 2025.',
+            url: 'https://www.reuters.com/world/middle-east/un-security-council-meet-sunday-over-us-strikes-iran-2025-06-22/'
         }
     ];
 

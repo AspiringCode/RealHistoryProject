@@ -24,6 +24,7 @@ export default function Navbar() {
         { label: 'The Decision', path: createPageUrl('Decision') },
         { label: 'Operation & Aftermath', path: createPageUrl('Operation') },
         { label: 'Chain of Events', path: createPageUrl('ChainOfEvents') },
+        { label: 'Classified', path: '/secret' },
         { label: 'Sources', path: createPageUrl('Sources') },
     ];
 
