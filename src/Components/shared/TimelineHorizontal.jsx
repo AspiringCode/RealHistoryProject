@@ -35,8 +35,8 @@ export default function TimelineHorizontal({ events }) {
               <div className="relative z-10 cursor-pointer">
                 <motion.div
                   className={`w-3 h-3 rounded-full border-2 transition-all duration-300 ${selectedEvent === index
-                      ? 'bg-midnight border-gold-muted scale-150 shadow-[0_0_15px_rgba(197,160,89,0.5)]'
-                      : 'bg-slate-800 border-slate-600 group-hover:border-gold-muted/50'
+                    ? 'bg-midnight border-gold-muted scale-150 shadow-[0_0_15px_rgba(197,160,89,0.5)]'
+                    : 'bg-slate-800 border-slate-600 group-hover:border-gold-muted/50'
                     }`}
                 />
                 {/* Pulse effect for active state */}

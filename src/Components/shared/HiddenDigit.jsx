@@ -7,10 +7,10 @@ export default function HiddenDigit({ digit, position = 'inline', className = ''
     const { difficulty } = useDifficulty();
 
     const positionStyles = {
-        'left': 'fixed left-4 top-1/2 -translate-y-1/2 z-50',
-        'right': 'fixed right-4 top-1/2 -translate-y-1/2 z-50',
-        'bottom': 'fixed bottom-4 left-1/2 -translate-x-1/2 z-50',
-        'top': 'fixed top-4 left-1/2 -translate-x-1/2 z-50',
+        'left': 'absolute left-4 top-1/2 -translate-y-1/2 z-50',
+        'right': 'absolute right-4 top-1/2 -translate-y-1/2 z-50',
+        'bottom': 'absolute bottom-4 left-1/2 -translate-x-1/2 z-50',
+        'top': 'absolute top-4 left-1/2 -translate-x-1/2 z-50',
         'inline': 'inline-block relative mx-1 align-middle'
     };
 
